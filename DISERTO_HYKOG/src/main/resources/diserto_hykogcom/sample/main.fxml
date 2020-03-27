@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="360.0" maxWidth="513.0" prefHeight="360.0" prefWidth="513.0" style="-fx-background-color: DCDCDC; -fx-background-image: url('@./Back.jpg');" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox alignment="CENTER" layoutX="35.0" layoutY="14.0" prefHeight="315.0" prefWidth="443.0">
+      <children>
+          <StackPane maxHeight="300.0" maxWidth="443.0" prefHeight="283.0" prefWidth="443.0" style="-fx-border-color: D3D3D3; -fx-background-color: D3D3D3; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-background-image: url('@./Back.jpg')">
+              <children>
+      
+                  <GridPane fx:id="grid" maxHeight="300.0" maxWidth="439.0" prefHeight="286.0" prefWidth="439.0">
+                      <children>
+                          <HBox alignment="CENTER" maxHeight="268.0" maxWidth="441.0" prefHeight="184.0" prefWidth="441.0" spacing="100.0" GridPane.rowIndex="1">
+                              <children>
+                           <VBox alignment="CENTER" spacing="7.0">
+                              <children>
+                                        <Button fx:id="disertoButton" graphicTextGap="0.0" maxHeight="100" maxWidth="100.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@../css/bouton-custom.css" />
+                                        <Label text="DISERTO" />
+                              </children>
+                           </VBox>
+                           <VBox alignment="CENTER" prefHeight="142.0" prefWidth="100.0" spacing="7.0">
+                              <children>
+                                        <Button fx:id="hykogButton" maxHeight="100.0" maxWidth="100.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@../css/bouton-custom.css" />
+                                        <Label text="HYQ" />
+                              </children>
+                           </VBox>
+                              </children>
+                          </HBox>
+                          <HBox fx:id="hbox2" alignment="CENTER" maxHeight="92.0" maxWidth="444.0" prefHeight="90.0" prefWidth="444.0">
+                              <children>
+                                  <ImageView fx:id="ontologyImage" fitHeight="90.0" fitWidth="378.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                          </HBox>
+      
+                      </children>
+                      <columnConstraints>
+                          <ColumnConstraints />
+                      </columnConstraints>
+                      <rowConstraints>
+                          <RowConstraints />
+                          <RowConstraints />
+                      </rowConstraints>
+                  </GridPane>
+              </children>
+          </StackPane>
+         <Button fx:id="closeButton" alignment="CENTER" cancelButton="true" maxHeight="28" minHeight="28" mnemonicParsing="false" prefWidth="100" stylesheets="@../css/bouton-custom.css" text="close" textAlignment="CENTER" wrapText="true">
+            <VBox.margin>
+               <Insets bottom="10.0" top="5.0" />
+            </VBox.margin>
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+      </children>
+   </VBox>
+
+
+</AnchorPane>

@@ -1,0 +1,6 @@
+.StackPane {
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+}
